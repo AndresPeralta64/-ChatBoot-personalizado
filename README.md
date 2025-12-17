@@ -1,2 +1,2 @@
 # -ChatBoot-personalizado
-En el siguiente html se demuestra el uso del chatbot personalizado, el chatbot tiene almacenado un pdf acerca de información básica acerca de física cuántica como cuándo surge, qué es, etc.
+En el siguiente archivo HTML se evidencia la implementación de un chatbot educativo personalizado, integrado en una aplicación web. Dicho asistente virtual ha sido entrenado a partir de una base de conocimiento generada desde un documento PDF que contiene información básica sobre física cuántica, incluyendo su origen, definición y conceptos fundamentales, lo que le permite interactuar con el usuario de manera informativa y contextualizada.
