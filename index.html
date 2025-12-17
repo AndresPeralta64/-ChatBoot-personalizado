@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando la Física Cuántica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4081;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1635070664750-2f6c1843e227?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070') no-repeat center/cover;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#concepts">Conceptos</a>
+            <a href="#applications">Aplicaciones</a>
+            <a href="#about">Acerca</a>
+        </nav>
+    </header>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Atomus"
+        agent-id="c7b14bf7-3fcb-4c8e-8db8-a35e6f6ec61d"
+        project-id="atomus-xerj"
+        language-code="es"
+    allow="microphone">
+    </df-messenger>
+
+</style>
+        
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explorando la Física Cuántica</h1>
+            <p>Descubre los misterios del universo a nivel subatómico, donde las reglas de la física clásica se desvanecen.</p>
+        </div>
+    </section>
+
+    <section id="concepts">
+        <h2>Conceptos Clave</h2>
+        <div class="content">
+            <div class="card">
+                <img src="https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2025/06/Superposicion-1.jpg?resize=1024,683" alt="Superposición">
+                <h3>Superposición</h3>
+                <p>Las partículas existen en múltiples estados a la vez hasta que se miden.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.es.wired.com/photos/67c9fef483ccbc4f78e2c516/16:9/w_2560%2Cc_limit/entrelazamiento%2520cuantico%2520(1).jpg" alt="Entrelazamiento">
+                <h3>Entrelazamiento</h3>
+                <p>Partículas conectadas que comparten propiedades, sin importar la distancia.</p>
+            </div>
+            <div class="card">
+                <img src="https://francisthemulenews.wordpress.com/wp-content/uploads/2008/02/dibujo26ene2008b.jpg" alt="Dualidad">
+                <h3>Dualidad Onda-Partícula</h3>
+                <p>La luz y la materia exhiben propiedades de onda y partícula simultáneamente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="applications">
+        <h2>Aplicaciones</h2>
+        <div class="content">
+            <div class="card">
+                <img src="https://cdn-3.expansion.mx/dims4/default/fd2d8e1/2147483647/strip/true/crop/2309x1299+0+0/resize/1200x675!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F45%2Fa4%2F4d8a797b4d0cbc59235c46a88320%2Fistock-1346925522.jpg" alt="Computación Cuántica">
+                <h3>Computación Cuántica</h3>
+                <p>Computadoras que usan qubits para resolver problemas complejos más rápido.</p>
+            </div>
+            <div class="card">
+                <img src="https://www.infoproteccion.com/wp-content/uploads/2025/12/criptografia-post-quantum.jpg" alt="Criptografía">
+                <h3>Criptografía Cuántica</h3>
+                <p>Sistemas de seguridad basados en principios cuánticos para proteger datos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Física Cuántica. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
